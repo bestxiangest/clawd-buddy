@@ -1,5 +1,5 @@
 {
-  "name": "clawd-on-desk",
+  "name": "clawd-buddy",
   "version": "0.6.0",
   "description": "A standalone desktop pet that lives on your screen with playful autonomous behavior.",
   "main": "src/main.js",
@@ -22,8 +22,8 @@
   "license": "MIT",
   "type": "commonjs",
   "build": {
-    "appId": "com.clawd.on-desk",
-    "productName": "Clawd on Desk",
+    "appId": "com.bestxiangest.clawdbuddy",
+    "productName": "Clawd Buddy",
     "mac": {
       "icon": "assets/icon.png",
       "target": [
@@ -43,7 +43,7 @@
     "win": {
       "icon": "assets/icon.ico",
       "signAndEditExecutable": false,
-      "artifactName": "Clawd-on-Desk-Setup-${version}.${ext}",
+      "artifactName": "Clawd-Buddy-Setup-${version}.${ext}",
       "target": [
         {
           "target": "nsis",
@@ -101,8 +101,8 @@
     "publish": [
       {
         "provider": "github",
-        "owner": "rullerzhou-afk",
-        "repo": "clawd-on-desk"
+        "owner": "bestxiangest",
+        "repo": "clawd-buddy"
       }
     ]
   },

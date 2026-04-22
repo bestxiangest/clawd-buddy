@@ -1,7 +1,7 @@
 <p align="center">
   <img src="assets/tray-icon.png" width="128" alt="Clawd">
 </p>
-<h1 align="center">Clawd on Desk</h1>
+<h1 align="center">Clawd Buddy</h1>
 <p align="center">
   <a href="README.md">English</a>
   ·

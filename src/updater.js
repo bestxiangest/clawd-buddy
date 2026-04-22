@@ -236,8 +236,8 @@ function initUpdater(ctx, deps = {}) {
     return new Promise((resolve, reject) => {
       const req = httpsGet({
         hostname: "api.github.com",
-        path: "/repos/rullerzhou-afk/clawd-on-desk/releases/latest",
-        headers: { "User-Agent": "Clawd-on-Desk" },
+        path: "/repos/bestxiangest/clawd-buddy/releases/latest",
+        headers: { "User-Agent": "Clawd-Buddy" },
       }, (res) => {
         let data = "";
         res.on("data", (chunk) => { data += chunk; });
@@ -488,7 +488,7 @@ function initUpdater(ctx, deps = {}) {
         version: info.version,
         onPrimary: async () => {
           if (isMac) {
-            shell.openExternal("https://github.com/rullerzhou-afk/clawd-on-desk/releases/latest");
+            shell.openExternal("https://github.com/bestxiangest/clawd-buddy/releases/latest");
             updateStatus = "idle";
             manualUpdateCheck = false;
             rebuildMenus();

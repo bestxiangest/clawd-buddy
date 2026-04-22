@@ -1,6 +1,6 @@
-# Clawd on Desk
+# Clawd Buddy
 
-Clawd on Desk 现在是一个**完全独立运行的 Electron 桌宠**。它不再依赖 Claude Code、Codex、Cursor、Gemini 等外部 agent 的 hook 或日志输入，而是用内置的自主行为逻辑驱动动画。
+Clawd Buddy 现在是一个**完全独立运行的 Electron 桌宠**。它不再依赖 Claude Code、Codex、Cursor、Gemini 等外部 agent 的 hook 或日志输入，而是用内置的自主行为逻辑驱动动画。
 
 ## 功能
 
