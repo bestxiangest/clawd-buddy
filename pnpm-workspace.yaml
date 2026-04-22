@@ -1,0 +1,8 @@
+ignoredBuiltDependencies:
+  - electron-winstaller
+  - koffi
+
+onlyBuiltDependencies:
+  - electron
+  - electron-winstaller
+  - koffi

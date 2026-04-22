@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "name": "Static Test",
+  "author": "OpenAI",
+  "version": "1.0.0",
+  "description": "Built-in static JPG theme used to verify raster-only authoring paths.",
+  "viewBox": { "x": 0, "y": 0, "width": 320, "height": 240 },
+  "layout": {
+    "contentBox": { "x": 42, "y": 24, "width": 236, "height": 188 },
+    "centerX": 160,
+    "baselineY": 210,
+    "visibleHeightRatio": 0.42,
+    "baselineBottomRatio": 0.06
+  },
+  "eyeTracking": {
+    "enabled": false,
+    "states": []
+  },
+  "states": {
+    "idle": ["static-idle.jpg"],
+    "thinking": ["static-thinking.jpg"],
+    "working": ["static-working.jpg"],
+    "juggling": ["static-juggling.jpg"],
+    "yawning": ["static-yawning.jpg"],
+    "dozing": ["static-dozing.jpg"],
+    "collapsing": ["static-collapsing.jpg"],
+    "sleeping": ["static-sleeping.jpg"],
+    "waking": ["static-waking.jpg"],
+    "attention": ["static-attention.jpg"],
+    "error": ["static-error.jpg"],
+    "notification": ["static-notification.jpg"],
+    "sweeping": ["static-sweeping.jpg"],
+    "carrying": ["static-carrying.jpg"]
+  },
+  "timings": {
+    "minDisplay": {
+      "attention": 2800,
+      "error": 3200,
+      "notification": 2600,
+      "carrying": 2400,
+      "working": 1000,
+      "thinking": 1000
+    },
+    "autoReturn": {
+      "attention": 2800,
+      "error": 3200,
+      "notification": 2600,
+      "carrying": 2400
+    },
+    "mouseIdleTimeout": 12000,
+    "mouseSleepTimeout": 30000,
+    "yawnDuration": 2500,
+    "wakeDuration": 1500
+  },
+  "hitBoxes": {
+    "default": { "x": 74, "y": 34, "w": 172, "h": 176 },
+    "sleeping": { "x": 54, "y": 92, "w": 214, "h": 112 },
+    "wide": { "x": 40, "y": 28, "w": 240, "h": 182 }
+  },
+  "sleepingHitboxFiles": ["static-sleeping.jpg", "static-collapsing.jpg"],
+  "wideHitboxFiles": ["static-error.jpg", "static-notification.jpg", "static-sweeping.jpg", "static-carrying.jpg"],
+  "miniMode": {
+    "supported": false
+  },
+  "transitions": {
+    "static-idle.jpg": { "out": 220 },
+    "static-attention.jpg": { "in": 120, "out": 360 },
+    "static-error.jpg": { "in": 120, "out": 420 },
+    "static-sleeping.jpg": { "in": 240 },
+    "static-waking.jpg": { "out": 220 }
+  },
+  "objectScale": {
+    "widthRatio": 0.64,
+    "heightRatio": 0.64,
+    "imgWidthRatio": 0.66,
+    "objBottom": 0.06,
+    "imgBottom": 0.06,
+    "offsetX": 0,
+    "offsetY": 0
+  }
+}

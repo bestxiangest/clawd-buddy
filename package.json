@@ -1,0 +1,118 @@
+{
+  "name": "clawd-on-desk",
+  "version": "0.6.0",
+  "description": "A standalone desktop pet that lives on your screen with playful autonomous behavior.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node launch.js",
+    "build": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux",
+    "build:all": "electron-builder --win --mac --linux",
+    "test": "node --test test",
+    "create-theme": "node scripts/create-theme.js"
+  },
+  "keywords": [
+    "clawd",
+    "desktop-pet",
+    "electron",
+    "desktop-companion"
+  ],
+  "author": "rullerzhou-afk",
+  "license": "MIT",
+  "type": "commonjs",
+  "build": {
+    "appId": "com.clawd.on-desk",
+    "productName": "Clawd on Desk",
+    "mac": {
+      "icon": "assets/icon.png",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ],
+      "category": "public.app-category.entertainment",
+      "extendInfo": {
+        "LSUIElement": true
+      }
+    },
+    "win": {
+      "icon": "assets/icon.ico",
+      "signAndEditExecutable": false,
+      "artifactName": "Clawd-on-Desk-Setup-${version}.${ext}",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "linux": {
+      "maintainer": "rullerzhou-afk <rullerzhou-afk@users.noreply.github.com>",
+      "icon": "assets/icons",
+      "category": "Utility",
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "deb",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "assets/icon.ico",
+      "uninstallerIcon": "assets/icon.ico",
+      "installerHeaderIcon": "assets/icon.ico"
+    },
+    "files": [
+      "src/**/*",
+      "assets/icon.ico",
+      "assets/icons/**/*",
+      "assets/svg/**/*",
+      "assets/sounds/**/*",
+      "assets/tray-icon*.png",
+      "themes/**/*"
+    ],
+    "asarUnpack": [
+      "assets/svg/**/*",
+      "themes/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "assets/icon.ico",
+        "to": "icon.ico"
+      }
+    ],
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "rullerzhou-afk",
+        "repo": "clawd-on-desk"
+      }
+    ]
+  },
+  "devDependencies": {
+    "electron": "^41.0.2",
+    "electron-builder": "^26.8.1"
+  },
+  "dependencies": {
+    "electron-updater": "^6.8.3",
+    "htmlparser2": "^12.0.0",
+    "koffi": "^2.15.2"
+  }
+}
