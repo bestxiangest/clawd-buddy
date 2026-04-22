@@ -67,6 +67,37 @@ npm test
 - 随机行为池复用现有状态：`attention`、`thinking`、`working`、`sweeping`、`carrying`
 - 勿扰模式只暂停“自主随机行为”，不影响点击、拖拽、Mini 模式和睡眠唤醒
 
+## 动画一览
+
+<table>
+  <tr>
+    <td align="center"><img src="assets/gif/clawd-idle.gif" width="100"><br><sub>待机</sub></td>
+    <td align="center"><img src="assets/gif/clawd-thinking.gif" width="100"><br><sub>思考</sub></td>
+    <td align="center"><img src="assets/gif/clawd-typing.gif" width="100"><br><sub>打字</sub></td>
+    <td align="center"><img src="assets/gif/clawd-building.gif" width="100"><br><sub>建造</sub></td>
+    <td align="center"><img src="assets/gif/clawd-juggling.gif" width="100"><br><sub>杂耍</sub></td>
+    <td align="center"><img src="assets/gif/clawd-conducting.gif" width="100"><br><sub>指挥</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/gif/clawd-error.gif" width="100"><br><sub>报错</sub></td>
+    <td align="center"><img src="assets/gif/clawd-happy.gif" width="100"><br><sub>开心</sub></td>
+    <td align="center"><img src="assets/gif/clawd-notification.gif" width="100"><br><sub>通知</sub></td>
+    <td align="center"><img src="assets/gif/clawd-sweeping.gif" width="100"><br><sub>扫地</sub></td>
+    <td align="center"><img src="assets/gif/clawd-carrying.gif" width="100"><br><sub>搬运</sub></td>
+    <td align="center"><img src="assets/gif/clawd-sleeping.gif" width="100"><br><sub>睡觉</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/gif/calico-idle.gif" width="80"><br><sub>三花待机</sub></td>
+    <td align="center"><img src="assets/gif/calico-thinking.gif" width="80"><br><sub>三花思考</sub></td>
+    <td align="center"><img src="assets/gif/calico-typing.gif" width="80"><br><sub>三花打字</sub></td>
+    <td align="center"><img src="assets/gif/calico-building.gif" width="80"><br><sub>三花建造</sub></td>
+    <td align="center"><img src="assets/gif/calico-juggling.gif" width="80"><br><sub>三花杂耍</sub></td>
+    <td align="center"><img src="assets/gif/calico-conducting.gif" width="80"><br><sub>三花指挥</sub></td>
+  </tr>
+</table>
+
+完整事件映射表、极简模式、点击彩蛋见：**[docs/guides/state-mapping.zh-CN.md](docs/guides/state-mapping.zh-CN.md)**
+
 ## 项目结构
 
 核心运行链路：
