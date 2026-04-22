@@ -1,6 +1,6 @@
-# Clawd on Desk
+# Clawd Buddy
 
-Clawd on Desk 是一个独立运行的 Electron 桌宠应用。主角 Clawd 是一只橙色像素风小章鱼，会待在你的桌面上，空闲时用眼睛跟随鼠标，长时间不动会睡觉，平时还会自己做出一些随机小动作，让它看起来像“活着”一样。
+Clawd Buddy 是一个独立运行的 Electron 桌宠应用。主角 Clawd 是一只橙色像素风小章鱼，会待在你的桌面上，空闲时用眼睛跟随鼠标，长时间不动会睡觉，平时还会自己做出一些随机小动作，让它看起来像“活着”一样。
 
 这个仓库当前已经从“AI coding agent 配套工具”改造成“独立桌宠版本”，**不再依赖 Claude Code / Codex / Cursor / Gemini 等外部 hook、plugin 或日志轮询**。
 
